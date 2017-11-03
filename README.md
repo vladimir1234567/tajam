@@ -1,2 +1,2 @@
 # tajam
-ini
+init
