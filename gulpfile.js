@@ -1,5 +1,6 @@
 var gulp = require('gulp'), // Подключаем Gulp
     sass = require('gulp-sass'); // Подключаем Sass пакет
+    autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function() { // Создаем таск "sass"
     return gulp.src(['sass/**/*.sass', 'sass/**/*.scss']) // Берем источник
