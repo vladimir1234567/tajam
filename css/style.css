@@ -3,20 +3,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.red-box {
-  width: 500px;
-  height: 600px;
-  margin: auto;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: red;
-}
-
-.red-box:hover {
-  background: green;
-}
-
-.red-box:active {
-  background: black;
-}
