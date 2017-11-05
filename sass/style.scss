@@ -3,3 +3,12 @@ body {
   margin: 0;
   padding: 0;
 }
+@import "wrapper.scss";
+
+.main-header {
+  width: 100%;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
