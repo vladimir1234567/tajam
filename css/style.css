@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -31,23 +35,25 @@ body {
 
 .main-header {
   width: 100%;
+  padding: 15px 0;
 }
 
 .main-header:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100% 0%;
-  background: -webkit-gradient(linear, left top, right top, from(#333333), to(transparent));
-  background: -webkit-linear-gradient(left, #333333 0%, transparent 100%);
-  background: -o-linear-gradient(left, #333333 0%, transparent 100%);
-  background: linear-gradient(to right, #333333 0%, transparent 100%);
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  height: 88px;
+  background: -webkit-gradient(linear, left top, right top, from(#2c2648), to(#44346d));
+  background: -webkit-linear-gradient(left, #2c2648, #44346d);
+  background: -o-linear-gradient(left, #2c2648, #44346d);
+  background: linear-gradient(to right, #2c2648, #44346d);
+  z-index: 1;
 }
 
 .main-header .wrapper {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -56,4 +62,25 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.main-header .wrapper .main-nav .mnav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header .wrapper .main-nav .mnav-list .mnlist-item .mnli-link {
+  font-family: "Roboto - Black";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #00e0d0;
+  letter-spacing: 0.33px;
 }
