@@ -1,0 +1,33 @@
+@mixin p-text {
+  font-family: Roboto, 'Ariel', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+@mixin section-dark-link {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-family: "Hammersmith One", 'Ariel', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $blue;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  border: 1px solid $blue;
+}
+@mixin section-light-link {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-family: "Hammersmith One", 'Ariel', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00e0d0;
+  text-transform: uppercase;
+  line-height: 40px;
+  border: 1px solid #00e0d0;
+}
