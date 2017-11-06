@@ -1,0 +1,25 @@
+.our-story {
+  padding: 70px 0 100px;
+  .wrapper {
+    img {
+    }
+    .story {
+      width: 540px;
+      .story-title {
+        color: #413d4b;
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+      }
+      .story-description {
+        @include p-text;
+      }
+    }
+  }
+}
+.our-story .wrapper {
+  display: flex;
+  justify-content: space-between;
+}

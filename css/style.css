@@ -220,3 +220,39 @@ body {
 .slider-controls .controls-item:first-child {
   background: #fff;
 }
+
+.our-story {
+  padding: 70px 0 100px;
+}
+
+.our-story .wrapper .story {
+  width: 540px;
+}
+
+.our-story .wrapper .story .story-title {
+  color: #413d4b;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.our-story .wrapper .story .story-description {
+  font-family: Roboto, 'Ariel', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.our-story .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
