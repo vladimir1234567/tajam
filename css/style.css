@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 ul {
   list-style: none;
   margin: 0;
@@ -21,6 +23,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', 'Ariel', sans-serif;
 }
 
 .wrapp {
@@ -44,11 +47,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 88px;
-  background: -webkit-gradient(linear, left top, right top, from(#2c2648), to(#44346d));
-  background: -webkit-linear-gradient(left, #2c2648, #44346d);
-  background: -o-linear-gradient(left, #2c2648, #44346d);
-  background: linear-gradient(to right, #2c2648, #44346d);
+  height: 80px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+  background-image: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
   z-index: 1;
 }
 
@@ -69,18 +72,72 @@ body {
   z-index: 2;
 }
 
-.main-header .wrapper .main-nav .mnav-list {
+.main-header .wrapper .logo .logo-link {
+  display: block;
+  width: 128px;
+  height: 50px;
+}
+
+.mnav-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-header .wrapper .main-nav .mnav-list .mnlist-item .mnli-link {
-  font-family: "Roboto - Black";
+.mnav-list .mnlist-item {
+  margin-right: 20px;
+}
+
+.mnav-list .mnlist-item:last-child {
+  margin-right: 0;
+}
+
+.mnlist-item .mnli-link {
+  font-family: "Roboto - Black", "Arial", sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #00e0d0;
+  color: #ffffff;
   letter-spacing: 0.33px;
+}
+
+.mnlist-item:first-child .mnli-link {
+  color: #00e0d0;
+}
+
+.hello {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+  background-image: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+}
+
+.hello .hello-wrapper {
+  width: 775px;
+  margin: 0 auto;
+  padding: 230px 0 0;
+}
+
+.hello .hello-wrapper .hello-title {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.hello .hello-wrapper .hello-title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 0px;
+  width: 50px;
+  height: 1px;
+  background-color: #00e0d0;
 }
