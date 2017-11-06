@@ -31,3 +31,19 @@
   line-height: 40px;
   border: 1px solid #00e0d0;
 }
+@mixin h2-text {
+  color: #413d4b;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+@mixin h3-text {
+  color: #413d4b;
+  font-family: "Roboto", 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}

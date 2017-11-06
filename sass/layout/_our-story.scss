@@ -1,17 +1,13 @@
 .our-story {
   padding: 70px 0 100px;
+  background: $white;
   .wrapper {
     img {
     }
     .story {
       width: 540px;
       .story-title {
-        color: #413d4b;
-        font-family: "Playfair Display", serif;
-        font-size: 22px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.1px;
+        @include h2-text;
       }
       .story-description {
         @include p-text;

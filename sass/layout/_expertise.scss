@@ -1,0 +1,118 @@
+.expertise {
+  padding: 70px 0 100px;
+  background: $white;
+  .expertise-header {
+    margin-bottom: 50px;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -25px;
+      content: "";
+      /* Style for "Separator" */
+      width: 50px;
+      height: 2px;
+      background-color: #413d4b;
+      opacity: 0.3;
+    }
+    .expert-title {
+      @include h2-text;
+      text-align: center;
+    }
+    .expert-description {
+      color: #2f2d35;
+      font-family: "Playfair Display", serif;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.05px;
+      text-align: center;
+    }
+  }
+}
+.expert-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .expert-item{
+    position: relative;
+    width: 33%;
+    padding-top: 115px;
+    border-right: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    &:nth-child(n+4) {
+      border-top: 1px solid #ebebeb;
+    }
+    &:nth-child(3n) {
+      border-right: none;
+    }
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      width: 49px;
+      height: 50px;
+      top: 35px;
+      left: 50%;
+      margin-left: -25px;
+      background: url("../img/screen.png");
+    }
+      &:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 42px;
+      top: 35px;
+      left: 50%;
+      margin-left: -25px;
+      background: url("../img/brush.png");
+    }
+    &:nth-child(3)::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 50px;
+      top: 35px;
+      left: 50%;
+      margin-left: -14px;
+      background: url("../img/phone.png");
+    }
+    &:nth-child(4)::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      top: 35px;
+      left: 50%;
+      margin-left: -25px;
+      background: url("../img/plan.png");
+    }
+    &:nth-child(5)::before {
+      position: absolute;
+      content: "";
+      width: 41px;
+      height: 50px;
+      top: 35px;
+      left: 50%;
+      margin-left: -11px;
+      background: url("../img/dzhostik.png");
+    }
+    &:last-child::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 46px;
+      top: 35px;
+      left: 50%;
+      margin-left: -25px;
+      background: url("../img/heart.png");
+    }
+    .ex-item-title {
+      @include h3-text;
+      text-align: center;
+    }
+    .ex-item-description {
+      @include p-text;
+      text-align: center;
+    }
+  }
+}
+
