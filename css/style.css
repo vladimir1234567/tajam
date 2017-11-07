@@ -606,7 +606,9 @@ body {
 }
 
 .our-works {
+  text-align: center;
   background: #fff;
+  padding-bottom: 70px;
 }
 
 .our-works .wrapper {
@@ -663,6 +665,7 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .pictures-list .pictures-item {
@@ -680,4 +683,18 @@ body {
 
 .pictures-list .pictures-item:nth-child(3), .pictures-list .pictures-item:nth-child(6), .pictures-list .pictures-item:nth-child(8), .pictures-list .pictures-item:nth-child(11) {
   background-color: #8a8a8a;
+}
+
+.press-more {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-family: "Hammersmith One", 'Ariel', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00e0d0;
+  text-transform: uppercase;
+  line-height: 40px;
+  border: 1px solid #00e0d0;
+  background: none;
 }

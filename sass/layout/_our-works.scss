@@ -1,5 +1,7 @@
 .our-works {
+  text-align: center;
   background: $white;
+  padding-bottom: 70px;
   .wrapper {
     padding: 70px 0;
     display: flex;
@@ -32,6 +34,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 70px;
   .pictures-item {
     width: 16.5%;
     height: 200px;
@@ -54,4 +57,8 @@
       background-color: #8a8a8a;
     }
   }
+}
+.press-more {
+  @include section-light-link;
+  background: none;
 }
