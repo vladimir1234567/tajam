@@ -1,7 +1,9 @@
 .expertise {
   padding: 70px 0 100px;
   background: $white;
-  .expertise-header {
+  .section-header {
+    position: relative;
+    padding-bottom: 15px;
     margin-bottom: 50px;
     &:after {
       position: absolute;
@@ -9,17 +11,16 @@
       left: 50%;
       margin-left: -25px;
       content: "";
-      /* Style for "Separator" */
       width: 50px;
       height: 2px;
-      background-color: #413d4b;
+      background-color: #c6c5c9;
       opacity: 0.3;
     }
-    .expert-title {
+    .section-title {
       @include h2-text;
       text-align: center;
     }
-    .expert-description {
+    .section-description {
       color: #2f2d35;
       font-family: "Playfair Display", serif;
       font-size: 14px;
