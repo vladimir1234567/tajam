@@ -15,7 +15,7 @@ body {
   background: lightcyan;
 }
 .wrapp {
-  width: 1600px;
+  max-width: 1600px;
   position: relative;
 }
 @import "layout/wrapp";
@@ -26,6 +26,7 @@ body {
 @import "layout/watcher";
 @import "layout/expertise";
 @import "layout/meet-team";
+@import "layout/our-works";
 
 
 
