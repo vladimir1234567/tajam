@@ -42,6 +42,7 @@
     }
     .our-studio {
       width: 270px;
+      margin-right: 60px;
       .studio-title {
         @include h3-text;
         color: $white;
@@ -80,4 +81,38 @@
     }
   }
 }
-.touch
+.touch {
+  .touch-title{
+    @include h3-text;
+    color: $white;
+    margin-bottom: 45px;
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    input {
+      box-sizing: border-box;
+      margin-right: 10px;
+      padding: 10px;
+      width: 210px;
+      color: black;
+      font-family: $Robot;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.7px;
+      background: none;
+      border: 1px solid #ffffff;
+      @include placeholder {
+        color: $white;
+      }
+    }
+    button {
+      width: 72px;
+      height: 48px;
+      background: #a199b4 url("../img/plane.png") 25px 13px no-repeat;
+      border: none;
+    }
+  }
+}

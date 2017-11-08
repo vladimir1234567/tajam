@@ -47,4 +47,10 @@
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
 
