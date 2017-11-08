@@ -1004,7 +1004,7 @@ body {
 }
 
 .footer-page .wrapper .our-studio {
-  width: 267px;
+  width: 270px;
 }
 
 .footer-page .wrapper .our-studio .studio-title {
@@ -1037,4 +1037,25 @@ body {
   width: 14px;
   height: 19px;
   background: url("../img/point.png");
+}
+
+.footer-page .wrapper .our-studio .our-phone {
+  position: relative;
+  padding-left: 30px;
+  font-family: Roboto, 'Ariel', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  color: #fff;
+}
+
+.footer-page .wrapper .our-studio .our-phone:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: url("../img/phone-s.png");
 }

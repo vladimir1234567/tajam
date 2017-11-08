@@ -41,7 +41,7 @@
       }
     }
     .our-studio {
-      width: 267px;
+      width: 270px;
       .studio-title {
         @include h3-text;
         color: $white;
@@ -62,6 +62,22 @@
           background: url("../img/point.png");
         }
       }
+      .our-phone {
+        position: relative;
+        padding-left: 30px;
+        @include p-text;
+        color: $white;
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 17px;
+          height: 17px;
+          background: url("../img/phone-s.png");
+        }
+      }
     }
   }
 }
+.touch
