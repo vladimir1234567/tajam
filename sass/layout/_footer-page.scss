@@ -15,14 +15,16 @@
   }
   .wrapper {
     position: relative;
+    display: flex;
     z-index: 1;
 
     .tajam-info {
-      width: 315px;
-      ,description-info {
+      width: 305px;
+      margin-right: 20px;
+      .description-info {
       @include p-text;
       color: $white;
-      padding-bottom: 65px;
+      margin-bottom: 65px;
     }
       .footer-info {
         display: flex;
@@ -38,6 +40,28 @@
         }
       }
     }
-
+    .our-studio {
+      width: 267px;
+      .studio-title {
+        @include h3-text;
+        color: $white;
+        margin-bottom: 40px;
+      }
+      .point-map {
+        position: relative;
+        padding-left: 30px;
+        @include p-text;
+        color: $white;
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 14px;
+          height: 19px;
+          background: url("../img/point.png");
+        }
+      }
+    }
   }
 }

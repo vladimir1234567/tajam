@@ -960,21 +960,26 @@ body {
 
 .footer-page .wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
 }
 
 .footer-page .wrapper .tajam-info {
-  width: 315px;
+  width: 305px;
+  margin-right: 20px;
 }
 
-.footer-page .wrapper .tajam-info, .footer-page .wrapper .tajam-info description-info {
+.footer-page .wrapper .tajam-info .description-info {
   font-family: Roboto, 'Ariel', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.42px;
   color: #fff;
-  padding-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .footer-page .wrapper .tajam-info .footer-info {
@@ -996,4 +1001,40 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   letter-spacing: 0.35px;
+}
+
+.footer-page .wrapper .our-studio {
+  width: 267px;
+}
+
+.footer-page .wrapper .our-studio .studio-title {
+  color: #413d4b;
+  font-family: "Roboto", 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.footer-page .wrapper .our-studio .point-map {
+  position: relative;
+  padding-left: 30px;
+  font-family: Roboto, 'Ariel', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  color: #fff;
+}
+
+.footer-page .wrapper .our-studio .point-map:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 19px;
+  background: url("../img/point.png");
 }
