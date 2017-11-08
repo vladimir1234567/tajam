@@ -938,7 +938,7 @@ body {
 
 .footer-page {
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 55px;
   background: black url("../img/footer-back.png");
   -webkit-background-size: cover;
           background-size: cover;
@@ -1082,13 +1082,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 300px;
+  margin-bottom: 25px;
 }
 
 .touch .subscribe input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 10px;
-  padding: 10px;
+  padding: 6px 0 6px 12px;
   width: 210px;
   color: black;
   font-family: "Roboto", "Ariel", sans-serif;
@@ -1118,7 +1119,67 @@ body {
 
 .touch .subscribe button {
   width: 72px;
-  height: 48px;
+  height: 40px;
   background: #a199b4 url("../img/plane.png") 25px 13px no-repeat;
   border: none;
+}
+
+.soc-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 255px;
+  margin-bottom: 50px;
+}
+
+.soc-list .soc-item {
+  margin-right: 10px;
+}
+
+.soc-list .soc-item .soc-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.soc-list .soc-item:first-child .soc-link {
+  background: url("../img/facebook.png") no-repeat center center;
+}
+
+.soc-list .soc-item:nth-child(2) .soc-link {
+  background: url("../img/twitter.png") no-repeat center center;
+}
+
+.soc-list .soc-item:nth-child(3) .soc-link {
+  background: url("../img/dribbble.png") no-repeat center center;
+}
+
+.soc-list .soc-item:nth-child(4) .soc-link {
+  background: url("../img/instagram.png") no-repeat center center;
+}
+
+.soc-list .soc-item:nth-child(5) .soc-link {
+  background: url("../img/google.png") no-repeat center center;
+}
+
+.soc-list .soc-item:last-child .soc-link {
+  background: url("../img/youtube.png") no-repeat center center;
+}
+
+.copy {
+  color: #ffffff;
+  font-family: "Roboto", "Ariel", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  /* Text style for "C, opyrigh" */
+  letter-spacing: 0.35px;
 }
