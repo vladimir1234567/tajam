@@ -821,6 +821,15 @@ body {
 
 .contact {
   padding-top: 35px;
+  padding-bottom: 70px;
+  background: #fff;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact .contact-title {
@@ -830,14 +839,16 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  margin-bottom: 35px;
 }
 
-.contact .writing-contact {
+.contact .us-contact {
   width: 50%;
   padding-right: 10px;
+  margin-right: 90px;
 }
 
-.contact .writing-contact input {
+.contact .us-contact input {
   padding: 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -852,7 +863,7 @@ body {
   letter-spacing: 0.7px;
 }
 
-.contact .writing-contact textarea {
+.contact .us-contact textarea {
   width: 100%;
   resize: none;
   -webkit-box-sizing: border-box;
@@ -868,7 +879,7 @@ body {
   letter-spacing: 0.7px;
 }
 
-.contact .writing-contact button {
+.contact .us-contact button {
   display: inline-block;
   margin: 0 auto;
   padding: 5px 15px;
@@ -880,4 +891,47 @@ body {
   line-height: 40px;
   border: 1px solid #00e0d0;
   background: none;
+}
+
+.happy-clients .clients-title {
+  color: #413d4b;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  margin-bottom: 35px;
+}
+
+.happy-clients .clients-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 385px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.happy-clients .clients-list .clients-item {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.happy-clients .clients-list .clients-item:nth-child(2n+1) {
+  width: 162px;
+  margin-right: 80px;
+}
+
+.happy-clients .clients-list .clients-item:nth-child(even) {
+  width: 138px;
+}
+
+.happy-clients .clients-list .clients-item .clients-link {
+  display: inline-block;
 }
