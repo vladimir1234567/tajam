@@ -1,0 +1,41 @@
+.contact {
+  padding-top: 35px;
+  .contact-title {
+    @include h2-text;
+  }
+  .writing-contact {
+    width: 50%;
+    padding-right: 10px;
+    input {
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #000000;
+      opacity: 0.5;
+      color: #413d4b;
+      font-family: $Robot;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.7px;
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      box-sizing: border-box;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #000000;
+      opacity: 0.5;
+      color: #413d4b;
+      font-family: $Robot;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.7px;
+    }
+    button {
+      @include section-light-link;
+      background: none;
+    }
+  }
+}
