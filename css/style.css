@@ -1054,7 +1054,7 @@ body {
 .footer-page .wrapper .our-studio .our-phone:before {
   position: absolute;
   content: "";
-  top: 0;
+  top: 2px;
   left: 0;
   width: 17px;
   height: 17px;
@@ -1180,6 +1180,5 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  /* Text style for "C, opyrigh" */
   letter-spacing: 0.35px;
 }

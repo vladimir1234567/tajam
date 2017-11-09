@@ -17,7 +17,6 @@
     position: relative;
     display: flex;
     z-index: 1;
-
     .tajam-info {
       width: 305px;
       margin-right: 20px;
@@ -71,7 +70,7 @@
         &:before {
           position: absolute;
           content: "";
-          top: 0;
+          top: 2px;
           left: 0;
           width: 17px;
           height: 17px;
@@ -169,6 +168,5 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  /* Text style for "C, opyrigh" */
   letter-spacing: 0.35px;
 }
