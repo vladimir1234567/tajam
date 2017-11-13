@@ -12,7 +12,8 @@ body {
 }
 body {
   font-family: 'Roboto', 'Ariel', sans-serif;
-  //background: lightcyan;
+  background: $white;
+  color: $dark-color;
 }
 .wrapp {
   max-width: 1600px;

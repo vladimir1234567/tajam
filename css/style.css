@@ -28,16 +28,13 @@ body {
 
 body {
   font-family: 'Roboto', 'Ariel', sans-serif;
+  background: #fff;
+  color: #413d4b;
 }
 
 .wrapp {
   max-width: 1600px;
   position: relative;
-}
-
-.wrapp {
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .wrapper {
@@ -51,12 +48,6 @@ body {
   padding: 15px 0;
   left: 0;
   right: 0;
-  opacity: 0.8;
-  z-index: 3;
-}
-
-.main-header .wrapper {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,10 +60,11 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
+  z-index: 4;
+  opacity: 0.8;
 }
 
-.main-header .wrapper .logo .logo-link {
+.main-header .logo .logo-link {
   display: block;
   width: 128px;
   height: 50px;
@@ -141,23 +133,26 @@ body {
 .hello .hello-wrapper {
   position: absolute;
   width: 775px;
-  top: 0;
+  top: 30%;
   left: 50%;
   margin-left: -387px;
-  padding: 230px 0 220px;
   text-align: center;
   z-index: 3;
 }
 
 .hello .hello-wrapper .hello-title {
   position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  position: relative;
   text-align: center;
+  font-weight: 900;
+  color: #ffffff;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  color: #ffffff;
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 900;
 }
 
 .hello .hello-wrapper .hello-title:after {
@@ -199,9 +194,10 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 70px;
+  bottom: 10%;
   left: 50%;
   margin-left: -30px;
+  z-index: 2;
 }
 
 .slider-controls .controls-item {
@@ -220,30 +216,6 @@ body {
 .our-story {
   padding: 70px 0 100px;
   background: #fff;
-}
-
-.our-story .wrapper .story {
-  width: 540px;
-}
-
-.our-story .wrapper .story .story-title {
-  color: #413d4b;
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-}
-
-.our-story .wrapper .story .story-description {
-  font-family: Roboto, 'Ariel', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-}
-
-.our-story .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,8 +226,36 @@ body {
           justify-content: space-between;
 }
 
+.our-story .story {
+  width: 540px;
+}
+
+.our-story .story .story-title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
+}
+
+.our-story .story .story-description {
+  font-family: Roboto, 'Ariel', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 .watcher {
   position: relative;
+  height: 100vh;
+}
+
+.watcher .city {
+  height: 100vh;
+  width: auto;
 }
 
 .watcher .press {
@@ -281,7 +281,7 @@ body {
   height: 148px;
 }
 
-.watcher .press img {
+.watcher .press .press-picture {
   margin-bottom: 35px;
 }
 
@@ -319,24 +319,24 @@ body {
 }
 
 .expertise .section-header:after {
+  content: "";
   position: absolute;
-  bottom: 0;
   left: 50%;
   margin-left: -25px;
-  content: "";
+  bottom: 0;
   width: 50px;
-  height: 2px;
-  background-color: #c6c5c9;
-  opacity: 0.3;
+  height: 1px;
+  background-color: #00e0d0;
 }
 
 .expertise .section-header .section-title {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
   text-align: center;
 }
 
@@ -495,20 +495,20 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -25px;
-  bottom: 0px;
+  bottom: 0;
   width: 50px;
   height: 1px;
   background-color: #00e0d0;
-  z-index: 2;
 }
 
 .meet-team .section-header .section-title {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
   text-align: center;
   color: #fff;
 }
@@ -621,12 +621,13 @@ body {
 }
 
 .our-works .wrapper .section-title {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
 }
 
 .our-works .wrapper .works-way {
@@ -823,9 +824,6 @@ body {
   padding-top: 35px;
   padding-bottom: 70px;
   background: #fff;
-}
-
-.contact .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -833,12 +831,13 @@ body {
 }
 
 .contact .contact-title {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -894,12 +893,13 @@ body {
 }
 
 .happy-clients .clients-title {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -934,6 +934,12 @@ body {
 
 .happy-clients .clients-list .clients-item .clients-link {
   display: inline-block;
+  overflow: hidden;
+}
+
+.happy-clients .clients-list .clients-item .clients-link img {
+  width: 100%;
+  height: auto;
 }
 
 .footer-page {

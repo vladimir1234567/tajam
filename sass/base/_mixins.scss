@@ -32,12 +32,24 @@
   border: 1px solid #00e0d0;
 }
 @mixin h2-text {
-  color: #413d4b;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  position: relative;
+  text-align: center;
+}
+@mixin after-line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 0;
+  width: 50px;
+  height: 1px;
+  background-color: $blue;
+
 }
 @mixin h3-text {
   color: #413d4b;
